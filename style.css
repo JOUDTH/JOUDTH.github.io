@@ -1,0 +1,403 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}   
+
+header{
+    background-color:#291806;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5em;
+    transition: 0.4s ;
+}
+.logo:hover{
+    color:rgba(146, 111, 16, 0.521)
+}
+
+.navigation a{
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
+    color: white;
+    padding-left: 10px;
+    
+}
+.navigation a:hover{
+    color: rgba(146, 111, 16, 0.521);
+}
+
+section{
+    padding: 100px 200px;
+
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(146, 111, 16, 0.521);
+    
+    letter-spacing: .5px;
+    padding-top: 10px ;
+    background-image: url(img/Snapchat-171250023.jpg) no-repeat  ;
+    background-position: right;
+    
+    
+}
+.main h2{
+    color: white;
+    font-size: 4.0em;
+    
+}
+
+.main h3{
+    font-family: 'Dongl e', sans-serif;
+
+    font-size: 2.5em;
+    color: #7B3F00;   
+}
+
+.btn{
+    color: #7B3F00;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 15px;
+    display: inline-block;
+    padding: .7433em  ;
+    margin: 7px 0px ;
+    letter-spacing: 1px;
+    margin-bottom: 20px ;
+    transition: 0.5s ease;
+    
+    
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: rgba(146, 111, 16, 0.521);
+}
+
+.social-icons a  {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+    font-size: 1.2em;
+}   
+
+.one:hover,.two:hover,.three:hover,.four:hover{
+    color: rgba(146, 111, 16, 0.521);
+    
+}
+
+.content{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #7B3F00;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px ;
+}
+
+.card{
+   width: 20em ;
+   box-shadow: 0 5px  25px  rgba(1 1 1 / 15%);
+   padding: 15px ;
+   margin: 20px ;
+   border-radius: 20px;
+   transition: .7s ease;
+   letter-spacing: .5px ;
+
+}
+.card:hover{
+    transform: scale(1.1);
+
+
+}
+
+.icon{
+    color: #7B3F00;
+    display: flex;
+    justify-content: center;
+    font-size: 8em;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #7B3F00;
+    margin: 10px ;
+    
+}
+.info p{ 
+    display: flex;
+    justify-content: center;
+    font-size: .8em;
+    margin: 10px ;
+    color: rgba(146, 111, 16, 0.521);
+}
+
+.Contact{
+    
+    background-color: rgba(146, 111, 16, 0.521);
+    
+    
+    
+}
+.lets{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    font-size: 2.2em;
+    color: white;
+}
+.contact-cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.kk h3{
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+}
+.kk p{
+    color: white;
+    text-align: center;
+    pad: 10px;
+}
+.footer{
+    background-color: #291806;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px ;
+
+}
+.footer p{
+    color: white;
+}
+.footer span{
+    color: rgba(182, 141, 31, 0.521);
+
+}
+
+@media (max-width: 1023px){ 
+
+header{
+    
+    padding: 10px 20px;
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    transition: 0.4s ;
+}
+.logo:hover{
+    color:rgba(146, 111, 16, 0.521)
+}
+
+.navigation a{
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .8em;
+    color: white;
+    padding-left: 5px;
+    
+}
+.navigation a:hover{
+    color: rgba(146, 111, 16, 0.521);
+}
+
+section{
+    padding: 50px 100px;
+
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(146, 111, 16, 0.521);
+    
+    letter-spacing: .5px;
+    padding-top: 10px ;
+    background-image: url(img/Snapchat-171250023.jpg) no-repeat  ;
+    background-position: right;
+    
+    
+}
+.main h2{
+    color: white;
+    font-size: 3.0em;
+    
+}
+
+.main h3{
+    font-family: 'Dongl e', sans-serif;
+
+    font-size: 1.5em;
+    color: #7B3F00;   
+}
+
+.btn{
+    color: #7B3F00;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 15px;
+    display: inline-block;
+    padding: .3433em  ;
+    margin: 5px 0px ;
+    letter-spacing: 1px;
+    margin-bottom: 10px ;
+    transition: 0.5s ease;
+    
+    
+}
+.btn:hover{
+    transform: scale(1.1);
+    background-color: rgba(146, 111, 16, 0.521);
+}
+
+.social-icons a  {
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+    font-size: .7em;
+}   
+
+.one:hover,.two:hover,.three:hover,.four:hover{
+    color: rgba(146, 111, 16, 0.521);
+    
+}
+
+.content{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #7B3F00;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 15px ;
+}
+
+.card{
+   width: 10em ;
+   box-shadow: 0 5px  25px  rgba(1 1 1 / 15%);
+   padding: 5px ;
+   margin: 10px ;
+   border-radius: 10px;
+   transition: .7s ease;
+   letter-spacing: .5px ;
+
+}
+.card:hover{
+    transform: scale(1.1);
+
+
+}
+
+.icon{
+    color: #7B3F00;
+    display: flex;
+    justify-content: center;
+    font-size: 8em;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #7B3F00;
+    margin: 10px ;
+    
+}
+.info p{ 
+    display: flex;
+    justify-content: center;
+    font-size: .8em;
+    margin: 10px ;
+    color: rgba(146, 111, 16, 0.521);
+}
+
+.Contact{
+    
+    background-color: rgba(146, 111, 16, 0.521);
+    
+    
+    
+}
+.lets{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 1.5em;
+    color: white;
+}
+.contact-cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.kk h3{
+    color: antiquewhite;
+    
+    padding: 5px;
+}
+.kk p{
+    color: white;
+    text-align: center;
+    pad: 5px;
+}
+.footer{
+    background-color: #291806;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px ;
+
+}
+.footer p{
+    color: white;
+}
+.footer span{
+    color: rgba(182, 141, 31, 0.521);
+
+}
+    
+}
