@@ -1,112 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="img/logo.png" > 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belal A. Thabet</title>
     <link rel="stylesheet" href="style.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-    
-    
-    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <title>Asgiment7</title>
+
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 1500px;
+        }
+
+        .green {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: green;
+            z-index: 3;
+            left: 30px;
+            top: 30px;
+        }
+
+        .red {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: #f65d5d;
+            z-index: 4;
+            left: 40px;
+            top: 40px;
+        }
+
+        .blue {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: #5d5dff;
+            z-index: 2;
+            left: 20px;
+            top: 20px;
+        }
+
+        .black {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: black;
+            z-index: 1;
+            left: 20px;
+            top: 30px;
+        }
+
+        .parent {
+            padding: 20px;
+            width: 400px;
+            background-color: #eee;
+            border-color: #f65d5d #5d5dff;
+            border-style: solid;
+            position: absolute;
+            top: 100px;
+            left: 35%;
+
+        }
+
+        .top-left {
+            display: inline-block;
+            text-align: center;
+            background-color: #5d5dff;
+            color: white;
+            width: 25px;
+            position: absolute;
+            top: -9px;
+            left: -10px;
+            border-right: solid #f65d5d;
+        }
+
+        .bottom-left {
+            display: inline-block;
+            text-align: center;
+            background-color: #5d5dff;
+            color: white;
+            width: 25px;
+            position: absolute;
+            bottom: -9px;
+            left: -10px;
+            border-right: solid #f65d5d;
+        }
+
+        .top-right {
+            display: inline-block;
+            text-align: center;
+            background-color: #5d5dff;
+            color: white;
+            width: 25px;
+            position: absolute;
+            top: -9px;
+            right: -10px;
+            border-left: solid #f65d5d;
+        }
+
+        .bottom-right {
+            display: inline-block;
+            text-align: center;
+            background-color: #5d5dff;
+            color: white;
+            width: 25px;
+            position: absolute;
+            bottom: -9px;
+            right: -10px;
+            border-left: solid #f65d5d;
+        }
+
+        hr.one {
+            position: relative;
+            top: 250px;
+        }
+
+        .ul-parent {
+            position: absolute;
+            top: 270px;
+            left: 35%;
+            width: 400px;
+
+        }
+
+        .first-li {
+            background-color: #eee;
+            list-style: none;
+            list-style-position: outside;
+            padding: 5px;
+        }
+
+        .first-li-1,
+        .first-li-2,
+        .first-li-3 {
+            background-color: white;
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+
+        .second-li {
+            list-style: none;
+
+            background-color: #eee;
+            list-style-position: outside;
+            padding: 5px;
+        }
+
+        .second-li-1,
+        .second-li-2,
+        .second-li-3 {
+            list-style-type: upper-roman;
+            background-color: white;
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+
+        .ul-js {
+            padding-left: 5px;
+
+        }
+
+        .third-li {
+            list-style: none;
+            background-color: #eee;
+            list-style-position: outside;
+            padding: 5px;
+            padding-left: 0px
+        }
+
+        .third-li-1,
+        .third-li-2 {
+            background-color: white;
+            margin-bottom: 5px;
+            padding: 5px;
+            list-style-position: inside;
+
+        }
+
+        hr.two {
+            position: relative;
+            top: 700px;
+        }
+
+        table {
+            position: relative;
+            top: 750px;
+            left: 30%;
+            width: 700px;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        th {
+            background-color: #585d5f;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            background-color: #eee;
+        }
+
+        .td-control .view {
+            display: inline-block;
+            background-color: #2196f3;
+            width: 50px;
+            color: white;
+        }
+
+        .td-control .Delet {
+            display: inline-block;
+            background-color: #f44336;
+            width: 50px;
+            color: white;
+        }
+    </style>
+
+
+
+
+
 </head>
+
 <body>
-    <header>
-        <a href="#" class="logo">Belal</a>
-        <nav class="navigation">
-            <a href="#services">Services</a>
-            <a href="#Projects">Projects</a>
-            <a href="#contact">Contact</a> 
-        </nav>
-    </header>
-    <section class="main">
-        <div>
-            <h3 class="h3">Hi there, I'am Belal</h3>
-            <h2 >Jr. Software Engineer</h2>
-            <a class="btn" href="#contact">View My work</a>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/belal.thabet.583/" class="one"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/belalth4real/" class="two"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/belal-a-thabet-49344a220/" class="three"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/JOUDTH" class="four"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </section>
 
-    <section class="cards" id="services">
-        <h2 class="title">Services</h2>
-        <div class="content"> 
-        <div class="card">
-            <div class="icon"><i class="fab fa-html5"></i></div>
-            <div class="info">
-                <h3>Front-end Development</h3>
-                <p>Building front-end web sited using HTML, CSS and Wordpress, with high level of Accessibility and professionalism</p>
-            </div>
+    <div class="green"></div>
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="black"></div>
+    <div class="parent">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, sed. Ea ipsum
+        similique quasi rem, fugiat voluptatibus reiciendis nam debitis earum quo veniam
+        laudantium mollitia atque! Laborum ea nam doloribus.
+        <span class="top-left">1</span>
+        <span class="bottom-left">2</span>
+        <span class="top-right">3</span>
+        <span class="bottom-right">4</span>
+    </div>
+    <hr class="one">
 
-        </div>
-        <div class="card">
-            <div class="icon"><i class="fab fa-python"></i></div>
-            <div class="info">
-                <h3>Full-Stack Development</h3>
-                <p>Build web applications and software using python-flask</p>
-            </div>
+    <ul class="ul-parent">
+        <li class="first-li">
+            HTML
+            <ol start="10">
+                <li class="first-li-1">Slim</li>
+                <li class="first-li-2">Pugjs</li>
+                <li class="first-li-3">HAML</li>
+            </ol>
+        </li>
+        <br>
+        <li class="second-li">
+            CSS
+            <ol start="10">
+                <li class="second-li-1">SASS</li>
+                <li class="second-li-2">LESS</li>
+                <li class="second-li-3">PostCSS</li>
+            </ol>
+        </li>
+        <br>
+        <li class="third-li">
+            JavaScript
+            <ul class="ul-js">
+                <li class="third-li-1">Vuejs</li>
+                <li class="third-li-2">Sveltejs</li>
+            </ul>
+        </li>
+    </ul>
+    <hr class="two">
+    <table>
+        <caption>Developers Rating</caption>
+        <thead>
+            <tr>
+                <th>Avatar</th>
+                <th>Group</th>
+                <th>Name</th>
+                <th>Points</th>
+                <th>control</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://via.placeholder.com/40/0000FF?text=Boy" alt="Error"></td>
+                <td>Ninja</td>
+                <td>Ahmed Mohamed</td>
+                <td>120</td>
+                <td class="td-control">
+                    <div class="view">view</div>
+                    <div class="Delet">Delet</div>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/40/0000FF?text=Boy" alt="Error"></td>
+                <td rowspan="2">Shades</td>
+                <td>Shady Nabil</td>
+                <td>180</td>
+                <td class="td-control">
+                    <div class="view">view</div>
+                    <div class="Delet">Delet</div>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/40/FF0000?text=Girl" alt="Error"></td>
 
-        </div>
-        <div class="card">
-            <div class="icon"><i class="fab fa-java"></i></div>
-            <div class="info">
-                <h3>JavaFX</h3>
-                <p>Bulding high compatibility Fx program by JavaFx</p>
-            </div>
-        </div>
+                <td>Eman Mohamed</td>
+                <td>160</td>
+                <td class="td-control">
+                    <div class="view">view</div>
+                    <div class="Delet">Delet</div>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/40/0000FF?text=Boy" alt="Error"></td>
+                <td rowspan="2">Valhala</td>
+                <td>Mohamed Ibrahim</td>
+                <td>190</td>
+                <td class="td-control">
+                    <div class="view">view</div>
+                    <div class="Delet">Delet</div>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/40/FF0000?text=Girl" alt="Error"></td>
 
-        </div>
-        
+                <td>Noor Atef</td>
+                <td>110</td>
+                <td class="td-control">
+                    <div class="view">view</div>
+                    <div class="Delet">Delet</div>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/40/0000FF?text=Boy" alt="Error"></td>
+                <td>Union</td>
+                <td>Mahmoud Adel</td>
+                <td>90</td>
+                <td class="td-control">
+                    <div class="view">view</div>
+                    <div class="Delet">Delet</div>
+            </tr>
 
-    </section>
-
-    <section  class="Contact" id="contact">
-        <h2 class="lets">Let's work together</h2>
-
-        <div class="contact-cards">
-            <div class="card">
-                <div class="icon"> <i class="fas fa-phone"></i></div>
-                <div class="kk">
-                    <h3>Phone</h3>
-                    <p>+++++++++++++</p>
-                </div>
-    
-            </div>
-            <div class="card">
-                <div class="icon"><i class="fas fa-envelope"></i> </div>
-                <div class="kk"> 
-                    <h3>Email</h3>
-                    <p>belalth4real@</p>
-                </div>
-    
-            </div>
-        </div>
-
-    </section>
-
-    <footer class="footer">
-        <p>Copyrights @ <span>Belal Thabet</span></p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/belal.thabet.583/" class="one"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/belalth4real/" class="two"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/belal-a-thabet-49344a220/" class="three"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/JOUDTH" class="four"><i class="fab fa-github"></i></a>
-        </div>
+        </tbody>
 
 
 
 
-    </footer>
+
+
+
+
+
+
+
+
+
+
+    </table>
 
 </body>
+
 </html>
