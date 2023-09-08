@@ -9,7 +9,7 @@
 }   
 
 header{
-    background-color:#291806;
+    background-color:#DACECE ;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -18,7 +18,12 @@ header{
     align-items: center;
     padding: 10px 200px;
 }
-
+#services{
+    background-color: white;
+}
+/* #contact{
+    background-color: #DACECE;
+} */
 .logo{
     color: white;
     text-decoration: none;
@@ -27,9 +32,11 @@ header{
     transition: 0.4s ;
 }
 .logo:hover{
-    color:rgba(146, 111, 16, 0.521)
+    color:#000000
 }
-
+.name{
+    background-color: #000000;
+}
 .navigation a{
     text-decoration: none;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -38,8 +45,14 @@ header{
     padding-left: 10px;
     
 }
+#pjs{
+    background-color: black;
+}
 .navigation a:hover{
-    color: rgba(146, 111, 16, 0.521);
+    color: rgba(17, 16, 14, 0.521);
+}
+#pjs:hover{
+    color: #9b9393;
 }
 
 section{
@@ -52,7 +65,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-color: rgba(146, 111, 16, 0.521);
+    background-color: rgba(219, 204, 204, 0.795);
     
     letter-spacing: .5px;
     padding-top: 10px ;
@@ -75,7 +88,7 @@ section{
 }
 
 .btn{
-    color: #7B3F00;
+    color: #000000;
     text-decoration: none;
     border-style: solid;
     border-radius: 15px;
@@ -90,7 +103,7 @@ section{
 }
 .btn:hover{
     transform: scale(1.1);
-    background-color: rgba(146, 111, 16, 0.521);
+    background-color: rgba(27, 26, 22, 0.521);
 }
 
 .social-icons a  {
@@ -101,7 +114,7 @@ section{
 }   
 
 .one:hover,.two:hover,.three:hover,.four:hover{
-    color: rgba(146, 111, 16, 0.521);
+    color: #000000;
     
 }
 
@@ -116,20 +129,22 @@ section{
 .title{
     display: flex;
     justify-content: center;
-    color: #7B3F00;
+    color: black;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px ;
+    background-color: rgb(218,206,206);
 }
 
 .card{
    width: 20em ;
-   box-shadow: 0 5px  25px  rgba(1 1 1 / 15%);
+   box-shadow: 0 5px  25px  rgba(1 1 1 / 60%);
    padding: 15px ;
    margin: 20px ;
    border-radius: 20px;
    transition: .7s ease;
    letter-spacing: .5px ;
+   
 
 }
 .card:hover{
@@ -139,16 +154,19 @@ section{
 }
 
 .icon{
-    color: #7B3F00;
+    color: #000000;
     display: flex;
     justify-content: center;
     font-size: 8em;
+}
+#ico , #ico1{
+    color: #a79a9a;
 }
 .info{
     text-align: center;
 }
 .info h3{
-    color: #7B3F00;
+    color: #524242;
     margin: 10px ;
     
 }
@@ -157,14 +175,12 @@ section{
     justify-content: center;
     font-size: .8em;
     margin: 10px ;
-    color: rgba(146, 111, 16, 0.521);
+    color: #9b9393;
 }
 
 .Contact{
     
-    background-color: rgba(146, 111, 16, 0.521);
-    
-    
+    background-color: rgba(0, 0, 0, 0.7);
     
 }
 .lets{
@@ -172,7 +188,7 @@ section{
     justify-content: center;
     margin: 50px;
     font-size: 2.2em;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .contact-cards{
     display: flex;
@@ -182,17 +198,17 @@ section{
     
 }
 .kk h3{
-    color: antiquewhite;
+    color: rgb(250, 245, 245);
     text-align: center;
     padding: 10px;
 }
 .kk p{
-    color: white;
+    color: rgb(255, 246, 246);
     text-align: center;
     pad: 10px;
 }
 .footer{
-    background-color: #291806;
+    background-color: #000000 ;
     display: flex;
     justify-content: space-between;
     padding: 17px ;
@@ -205,6 +221,82 @@ section{
     color: rgba(182, 141, 31, 0.521);
 
 }
+
+
+
+
+
+
+/* Add background image */
+.background-image {
+    position: fixed;
+    top: 5;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img.jpg'); /* Replace with your actual background image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1; /* Place the background behind other elements */
+    filter: grayscale(100%);
+}
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    transition: .7s ease;
+
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 0px;
+  }
+  
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  .gallery-item:hover {
+    transform: scale(1.1);
+
+    
+  }
+
+
+
+/* Style the links */
+.gallery-item a {
+display: block;
+background-color: #007BFF; /* Background color for the links */
+color: white; /* Text color for the links */
+text-decoration: none; /* Remove underlines from the links */
+padding: 10px 20px; /* Add padding for spacing */
+margin-top: 10px; /* Add margin to separate links */
+border-radius: 5px; /* Add rounded corners to the links */
+}
+
+/* Style the links on hover (optional) */
+.gallery-item a:hover {
+background-color: #0056b3; /* Change background color on hover */
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1023px){ 
 
@@ -221,7 +313,7 @@ header{
     transition: 0.4s ;
 }
 .logo:hover{
-    color:rgba(146, 111, 16, 0.521)
+    color:rgba(2, 2, 1, 0.521)
 }
 
 .navigation a{
@@ -233,7 +325,7 @@ header{
     
 }
 .navigation a:hover{
-    color: rgba(146, 111, 16, 0.521);
+    color: rgba(26, 25, 22, 0.521);
 }
 
 section{
@@ -265,11 +357,11 @@ section{
     font-family: 'Dongl e', sans-serif;
 
     font-size: 1.5em;
-    color: #7B3F00;   
+    color: #000000;   
 }
 
 .btn{
-    color: #7B3F00;
+    color: #14120f;
     text-decoration: none;
     border-style: solid;
     border-radius: 15px;
@@ -284,7 +376,7 @@ section{
 }
 .btn:hover{
     transform: scale(1.1);
-    background-color: rgba(146, 111, 16, 0.521);
+    background-color: rgba(5, 5, 5, 0.521);
 }
 
 .social-icons a  {
@@ -310,7 +402,7 @@ section{
 .title{
     display: flex;
     justify-content: center;
-    color: #7B3F00;
+    color: #0a0909;
     font-size: 1.5em;
     font-weight: 800;
     margin-bottom: 15px ;
@@ -333,7 +425,7 @@ section{
 }
 
 .icon{
-    color: #7B3F00;
+    color: #000000;
     display: flex;
     justify-content: center;
     font-size: 8em;
@@ -376,7 +468,7 @@ section{
     
 }
 .kk h3{
-    color: antiquewhite;
+    color: antiquewhite; 
     
     padding: 5px;
 }
@@ -386,7 +478,7 @@ section{
     pad: 5px;
 }
 .footer{
-    background-color: #291806;
+    background-color: #77543d ;
     display: flex;
     justify-content: space-between;
     padding: 7px ;
@@ -401,3 +493,5 @@ section{
 }
     
 }
+
+  
